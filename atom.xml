@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dew&#39;s Blog</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-09-20T07:27:58.635Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Dew</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>教程收集</title>
+    <link href="http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
+    <id>http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</id>
+    <published>2020-09-19T15:14:46.000Z</published>
+    <updated>2020-09-20T07:27:58.635Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;hexo-博客搭建参考&quot;&gt;hexo 博客搭建参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/77db3862595c&quot;&gt;Mac 系统下搭建hexo个人博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/jingbin_/article/details/79536467&quot;&gt;Mac搭建Hexo博客流程记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/&quot;&gt;hexo博客搭建指北&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="博客相关细节" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%BB%86%E8%8A%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中短篇科幻小说摘录</title>
+    <link href="http://example.com/2020/09/19/science-fiction-excerpt/"/>
+    <id>http://example.com/2020/09/19/science-fiction-excerpt/</id>
+    <published>2020-09-19T14:17:58.000Z</published>
+    <updated>2020-09-20T02:30:54.460Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;       本文用来记录一直以来看到的中短篇科幻小说。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品摘录" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E6%91%98%E5%BD%95/"/>
+    
+    
+    <category term="科幻" scheme="http://example.com/tags/%E7%A7%91%E5%B9%BB/"/>
+    
+    <category term="类严肃文学" scheme="http://example.com/tags/%E7%B1%BB%E4%B8%A5%E8%82%83%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>寄甡</title>
+    <link href="http://example.com/2020/09/01/%E5%AF%84%E7%94%A1/"/>
+    <id>http://example.com/2020/09/01/%E5%AF%84%E7%94%A1/</id>
+    <published>2020-09-01T02:36:41.000Z</published>
+    <updated>2020-09-01T03:36:31.517Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;寄甡&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/09/01/14wIlxaZFSYNTEL.png&quot; alt=&quot;图层 1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="视觉小说" scheme="http://example.com/tags/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/"/>
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诡秘之主</title>
+    <link href="http://example.com/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/"/>
+    <id>http://example.com/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/</id>
+    <published>2020-08-24T07:02:14.000Z</published>
+    <updated>2020-08-26T02:51:20.198Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://book.qidian.com/info/1010868264&quot;&gt;诡秘之主&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;​	&lt;strong&gt;先定个小目标，超过这本书。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	花了大概三周和200块钱，挤着各种各样的碎片时间，看完了这部446w字的网络小说，带给我了很多收获。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="网络文学" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>艾菲的森林</title>
+    <link href="http://example.com/2020/08/01/%E8%89%BE%E8%8F%B2%E7%9A%84%E6%A3%AE%E6%9E%97/"/>
+    <id>http://example.com/2020/08/01/%E8%89%BE%E8%8F%B2%E7%9A%84%E6%A3%AE%E6%9E%97/</id>
+    <published>2020-08-01T01:03:52.000Z</published>
+    <updated>2020-08-02T14:25:29.855Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://www.linovel.net/book/108290.html&quot;&gt;艾菲的森林&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;​		我发现了，人是有限度的，鸽子是没有限度的。前面的回忆录堪堪写了三分之一，fatal twelve 的评论也只写了一大半，我却又开了一个新评论写。虽然本博客本来就是自娱自乐（即便这种事情我高三干了一整年），但自己鸽自己也蛮奇怪的吧。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+    <category term="网络文学" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fatal_twelve</title>
+    <link href="http://example.com/2020/07/26/fatal-twelve/"/>
+    <id>http://example.com/2020/07/26/fatal-twelve/</id>
+    <published>2020-07-26T15:27:25.000Z</published>
+    <updated>2020-08-03T03:03:59.035Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;fatal-twelve&quot;&gt;fatal twelve&lt;/h2&gt;
+&lt;p&gt;​    这几天一直没写回忆录（咕咕咕），一方面是在复读与不复读之间徘徊，去了很多现场招生咨询顺带也去登记了本校复读，另一方面是在打95版pvz和本游戏fatal twelve(致命十二人)。&lt;/p&gt;
+&lt;p&gt;​    本文用来记录一下游戏感受。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="视觉小说" scheme="http://example.com/tags/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/"/>
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《人世间》摘抄</title>
+    <link href="http://example.com/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/"/>
+    <id>http://example.com/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/</id>
+    <published>2020-07-17T13:15:24.000Z</published>
+    <updated>2020-07-17T13:58:45.146Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;进入第二道门，便是住屋。郑家只有一件住屋，十五六平方米，火坑占去了一半地方，窗子在连着炕的一面墙上，仅四指宽的窗台。窗台以上的玻璃结着冰，为了防止融化的冰水淌到炕上，窗台被抹布卷和布条卷全部侵占了。地上，锅台和碗橱占去了另一半面积。有张旧桌子，一把让人看上去不敢</summary>
+        
+      
+    
+    
+    
+    <category term="摘抄" scheme="http://example.com/categories/%E6%91%98%E6%8A%84/"/>
+    
+    
+    <category term="摘抄-场景描写" scheme="http://example.com/tags/%E6%91%98%E6%8A%84-%E5%9C%BA%E6%99%AF%E6%8F%8F%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OI康复日记</title>
+    <link href="http://example.com/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/"/>
+    <id>http://example.com/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/</id>
+    <published>2020-07-15T04:53:34.000Z</published>
+    <updated>2020-09-13T13:44:05.307Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;留坑&lt;/p&gt;
+&lt;p&gt;咕咕咕咕咕咕咕咕咕咕咕咕&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="OI" scheme="http://example.com/tags/OI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我高中时的文化课与竞赛</title>
+    <link href="http://example.com/2020/07/14/Dew/"/>
+    <id>http://example.com/2020/07/14/Dew/</id>
+    <published>2020-07-14T07:38:43.000Z</published>
+    <updated>2020-09-14T09:31:05.173Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本文根据本人的亲身经历撰写，因三年时光并不很好回忆，与现实情况细节有相当的出入属于正常情况，还望各位出场人物轻喷（保证本文不出现真实姓名，如果侵犯到了您的权益或者您不想出现在我的故事中，请联系我本人修改或删除）&lt;/p&gt;
+&lt;p&gt;萝卜建议我写一点发一点，我觉得很有道理。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="生活" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="回忆录" scheme="http://example.com/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
+    
+  </entry>
+  
+</feed>
