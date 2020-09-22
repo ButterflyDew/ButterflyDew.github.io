@@ -63,7 +63,7 @@ p.spoiler {
   color: black;
   background-color: black;
   text-shadow: none;
-}</style></head>
+}</style><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
 
 </html>
 
@@ -104,7 +104,7 @@ p.spoiler {
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">155</span>
+            <span class="post-count">127</span>
         </span>
     </span>
 
@@ -128,28 +128,30 @@ p.spoiler {
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="hexo-博客搭建参考"><a href="#hexo-博客搭建参考" class="headerlink" title="hexo 博客搭建参考"></a>hexo 博客搭建参考</h2><ul>
+  <h2 id="hexo-博客搭建参考">hexo 博客搭建参考</h2>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/77db3862595c">Mac 系统下搭建hexo个人博客</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/jingbin_/article/details/79536467">Mac搭建Hexo博客流程记录</a></li>
 <li><a target="_blank" rel="noopener" href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/">hexo博客搭建指北</a></li>
 </ul>
 <p>​       <a id="more"></a></p>
-<h2 id="Ayer"><a href="#Ayer" class="headerlink" title="Ayer"></a><a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本博客采用的 Hexo 主题</p>
-<h2 id="段首空格"><a href="#段首空格" class="headerlink" title="段首空格"></a>段首空格</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个折磨了我许久的东西</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;nbsp；（；换成英文）是空格符号</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在段首加入 7 个我觉得比较爽</p>
+<h2 id="ayer"><a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a></h2>
+<p>       本博客采用的 Hexo 主题</p>
+<h2 id="段首空格">段首空格</h2>
+<p>       一个折磨了我许久的东西</p>
+<p>       &amp;nbsp；（；换成英文）是空格符号</p>
+<p>       在段首加入 7 个我觉得比较爽</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Hexo博客折叠-显示-隐藏-部分文字"><a href="#Hexo博客折叠-显示-隐藏-部分文字" class="headerlink" title="Hexo博客折叠(显示/隐藏)部分文字"></a><a target="_blank" rel="noopener" href="https://cppbug.com/2020/02/14/Hexo/h6-%E6%8A%98%E5%8F%A0%E6%96%87%E5%AD%97/">Hexo博客折叠(显示/隐藏)部分文字</a></h2><details>
+<h2 id="hexo博客折叠-显示-隐藏-部分文字"><a target="_blank" rel="noopener" href="https://cppbug.com/2020/02/14/Hexo/h6-%E6%8A%98%E5%8F%A0%E6%96%87%E5%AD%97/">Hexo博客折叠(显示/隐藏)部分文字</a></h2>
+<details>
   <summary>点击阅读全文</summary>
-
 <p>text</p>
 </details>
-
-<h2 id="hexo-spoiler插件"><a href="#hexo-spoiler插件" class="headerlink" title="hexo spoiler插件"></a><a target="_blank" rel="noopener" href="http://unnamed42.github.io/2016-06-25-hexo-spoiler%E6%8F%92%E4%BB%B6.html">hexo spoiler插件</a></h2><ul>
+<h2 id="hexo-spoiler插件"><a target="_blank" rel="noopener" href="http://unnamed42.github.io/2016-06-25-hexo-spoiler%E6%8F%92%E4%BB%B6.html">hexo spoiler插件</a></h2>
+<ul>
 <li>单击显示</li>
 </ul>
-<p>​    
+<p>​	
   <span class="spoiler" onclick="this.classList.toggle('spoiler')">
     <span class="spoiler-blur ">text</span>
   </span></p>
@@ -572,7 +574,40 @@ p.spoiler {
 
 <!-- MathJax -->
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
 <!-- Katex -->
+
+
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        
+    
+
 
 <!-- busuanzi  -->
 
