@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>OI康复日记</title>
-    <url>/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/</url>
-    <content><![CDATA[<p>留坑</p>
-<p>咕咕咕咕咕咕咕咕咕咕咕咕</p>
-]]></content>
-      <categories>
-        <category>算法竞赛</category>
-      </categories>
-      <tags>
-        <tag>OI</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>fatal_twelve</title>
     <url>/2020/07/26/fatal-twelve/</url>
     <content><![CDATA[<h2 id="fatal-twelve">fatal twelve</h2>
@@ -47,6 +34,19 @@
       </tags>
   </entry>
   <entry>
+    <title>OI康复日记</title>
+    <url>/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/</url>
+    <content><![CDATA[<p>留坑</p>
+<p>咕咕咕咕咕咕咕咕咕咕咕咕</p>
+]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
+      <tags>
+        <tag>OI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《人世间》摘抄</title>
     <url>/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/</url>
     <content><![CDATA[<ul>
@@ -58,6 +58,48 @@
       </categories>
       <tags>
         <tag>摘抄-场景描写</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教程收集</title>
+    <url>/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="hexo-博客搭建参考">hexo 博客搭建参考</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/77db3862595c">Mac 系统下搭建hexo个人博客</a></li>
+<li><a href="https://blog.csdn.net/jingbin_/article/details/79536467">Mac搭建Hexo博客流程记录</a></li>
+<li><a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/">hexo博客搭建指北</a></li>
+</ul>
+<p>​       <a id="more"></a></p>
+<h2 id="ayer"><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a></h2>
+<p>       本博客采用的 Hexo 主题</p>
+<h2 id="段首空格">段首空格</h2>
+<p>       一个折磨了我许久的东西</p>
+<p>       &amp;nbsp；（；换成英文）是空格符号</p>
+<p>       在段首加入 7 个我觉得比较爽</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br></pre></td></tr></table></figure>
+<h2 id="hexo博客折叠-显示-隐藏-部分文字"><a href="https://cppbug.com/2020/02/14/Hexo/h6-%E6%8A%98%E5%8F%A0%E6%96%87%E5%AD%97/">Hexo博客折叠(显示/隐藏)部分文字</a></h2>
+<details>
+  <summary>点击阅读全文</summary>
+<p>text</p>
+</details>
+<h2 id="hexo-spoiler插件"><a href="http://unnamed42.github.io/2016-06-25-hexo-spoiler%E6%8F%92%E4%BB%B6.html">hexo spoiler插件</a></h2>
+<ul>
+<li>单击显示</li>
+</ul>
+<p>​	
+  <span class="spoiler" onclick="this.classList.toggle('spoiler')">
+    <span class="spoiler-blur ">text</span>
+  </span></p>
+<h2 id="标题居中">标题居中</h2>
+<p>       使用 html 实现。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h1 align &#x3D; &quot;center&quot;&gt;居中的标题&lt;&#x2F;h1&gt;</span><br></pre></td></tr></table></figure>
+<p>       其中的 h1 对应一集标题，根据需要可以改为 h1 ～ h6</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>博客相关细节</tag>
       </tags>
   </entry>
   <entry>
@@ -120,6 +162,45 @@
       <tags>
         <tag>LGBT+</tag>
         <tag>网络文学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>寄甡</title>
+    <url>/2020/09/01/%E5%AF%84%E7%94%A1/</url>
+    <content><![CDATA[<h1>寄甡</h1>
+<p><img src="https://i.loli.net/2020/09/01/14wIlxaZFSYNTEL.png" alt="图层 1.png"></p>
+<p>​    <a id="more"></a></p>
+<p>​	全是游戏感受（剧透），打算少写一点。</p>
+<p>​	第一次玩国产作品，本来以为会很不适应配音，但是意外的感觉还不错，一点也没棒读的感觉，倒是粤语甚至是粤语唱的《死性不改》让人眼前一亮。</p>
+<p>​	不过，文化的相通性我也没什么很深的感觉，有种杂糅幻想与现实的感觉，但没能落地。这也许和我的人生经历有关，毕竟从来没在现实中见着过单性别学校或是素质教育学校，自然感到陌生。但是数学连堂这种根深蒂固的恐惧想必还是能够强烈地感同身受的。</p>
+<p>​	下面来集中吐槽（剧透）整个故事。</p>
+<p>​	首先是开幕雷击，女主死亡cg。我心里一颤，这是要走奇幻路线吗？</p>
+<p>​	然后剧情开始在过去与现实反复横跳。哼，我懂了，这就是一个无法被玩家左右的 BE 。</p>
+<p>​	于是我强行压制住心情，打算剽窃一下这里的各种手法。但每次一看到发糖，我心里面总会回忆起女主被匕首锁喉的死亡场景，全是说不出的滋味。</p>
+<p>​	故事发展越来越紧凑，也越来越黑，钩嵌着我的心弦。</p>
+<p>​	我倒数着时间，等待着那一刻的到来。</p>
+<p>​	结果被急转直下打的措手不及。</p>
+<p>​	玩的时候我就一直在想了，女主死了，她妈怎么办呢，还是个单亲家庭啊。</p>
+<p>​	我未曾设想的是她妈先于她自杀了。回味一下伏笔，感受一下心境，我能感受到合理之处，但还是感觉处理不到位，有种剧情杀的嫌疑。</p>
+<p>​	我更没想到的是，有情人终成姐妹？？？</p>
+<p>​	我早该料到的…</p>
+<p>​	玩的时候有种淡淡的紧张感，导致我有点过分关注现行剧情，没怎么在意副本的联系。</p>
+<p>​	打通第一个结局“殉爱之花”之后，才慢慢回想起之前忽略的内容，发现全作充满着不少隐喻与暗示，有的我甚至没有在这条线找到。</p>
+<p>​	开了第二轮后，我发现 skip 异常的难用，便懒得自己探索，研究了一下网上的攻略。</p>
+<p>​	于是第三轮把 TE 打了。神奇的是，TE 居然是个 HE ，女主压根儿没死。</p>
+<p>​	看来制作组还是有良心的。</p>
+<p>​	也快开学了，我还有好多事没干，剩下两个结局也懒得搞了。</p>
+<p>​	看好多人分析各种细节分析的煞有其事，我觉得他们很厉害，弄得我像是一个没好好玩的人。</p>
+<p>​	另外，本作有股淡淡的文青风。</p>
+<p>​	我从中的最大收获大概是叙事方法吧。从来没想过可以按时间来回跳跃，处理好了悬疑感和压抑感非常强烈。很多时候，哪怕我们已经知晓了结局，我们还是会孜孜不倦的探求着其中的过程。</p>
+<p>​	最惊艳的是最后混乱时间线的那一段，文字和声音分别是发生在两个时间中的事情，它们却重合了。现实与回忆相交织，极有表现力的展示了女主的崩溃的精神状态，营造出来一股淡淡的毛骨悚然。</p>
+]]></content>
+      <categories>
+        <category>作品评论</category>
+      </categories>
+      <tags>
+        <tag>视觉小说</tag>
+        <tag>LGBT+</tag>
       </tags>
   </entry>
   <entry>
@@ -196,87 +277,6 @@
       </categories>
       <tags>
         <tag>网络文学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>寄甡</title>
-    <url>/2020/09/01/%E5%AF%84%E7%94%A1/</url>
-    <content><![CDATA[<h1>寄甡</h1>
-<p><img src="https://i.loli.net/2020/09/01/14wIlxaZFSYNTEL.png" alt="图层 1.png"></p>
-<p>​    <a id="more"></a></p>
-<p>​	全是游戏感受（剧透），打算少写一点。</p>
-<p>​	第一次玩国产作品，本来以为会很不适应配音，但是意外的感觉还不错，一点也没棒读的感觉，倒是粤语甚至是粤语唱的《死性不改》让人眼前一亮。</p>
-<p>​	不过，文化的相通性我也没什么很深的感觉，有种杂糅幻想与现实的感觉，但没能落地。这也许和我的人生经历有关，毕竟从来没在现实中见着过单性别学校或是素质教育学校，自然感到陌生。但是数学连堂这种根深蒂固的恐惧想必还是能够强烈地感同身受的。</p>
-<p>​	下面来集中吐槽（剧透）整个故事。</p>
-<p>​	首先是开幕雷击，女主死亡cg。我心里一颤，这是要走奇幻路线吗？</p>
-<p>​	然后剧情开始在过去与现实反复横跳。哼，我懂了，这就是一个无法被玩家左右的 BE 。</p>
-<p>​	于是我强行压制住心情，打算剽窃一下这里的各种手法。但每次一看到发糖，我心里面总会回忆起女主被匕首锁喉的死亡场景，全是说不出的滋味。</p>
-<p>​	故事发展越来越紧凑，也越来越黑，钩嵌着我的心弦。</p>
-<p>​	我倒数着时间，等待着那一刻的到来。</p>
-<p>​	结果被急转直下打的措手不及。</p>
-<p>​	玩的时候我就一直在想了，女主死了，她妈怎么办呢，还是个单亲家庭啊。</p>
-<p>​	我未曾设想的是她妈先于她自杀了。回味一下伏笔，感受一下心境，我能感受到合理之处，但还是感觉处理不到位，有种剧情杀的嫌疑。</p>
-<p>​	我更没想到的是，有情人终成姐妹？？？</p>
-<p>​	我早该料到的…</p>
-<p>​	玩的时候有种淡淡的紧张感，导致我有点过分关注现行剧情，没怎么在意副本的联系。</p>
-<p>​	打通第一个结局“殉爱之花”之后，才慢慢回想起之前忽略的内容，发现全作充满着不少隐喻与暗示，有的我甚至没有在这条线找到。</p>
-<p>​	开了第二轮后，我发现 skip 异常的难用，便懒得自己探索，研究了一下网上的攻略。</p>
-<p>​	于是第三轮把 TE 打了。神奇的是，TE 居然是个 HE ，女主压根儿没死。</p>
-<p>​	看来制作组还是有良心的。</p>
-<p>​	也快开学了，我还有好多事没干，剩下两个结局也懒得搞了。</p>
-<p>​	看好多人分析各种细节分析的煞有其事，我觉得他们很厉害，弄得我像是一个没好好玩的人。</p>
-<p>​	另外，本作有股淡淡的文青风。</p>
-<p>​	我从中的最大收获大概是叙事方法吧。从来没想过可以按时间来回跳跃，处理好了悬疑感和压抑感非常强烈。很多时候，哪怕我们已经知晓了结局，我们还是会孜孜不倦的探求着其中的过程。</p>
-<p>​	最惊艳的是最后混乱时间线的那一段，文字和声音分别是发生在两个时间中的事情，它们却重合了。现实与回忆相交织，极有表现力的展示了女主的崩溃的精神状态，营造出来一股淡淡的毛骨悚然。</p>
-]]></content>
-      <categories>
-        <category>作品评论</category>
-      </categories>
-      <tags>
-        <tag>视觉小说</tag>
-        <tag>LGBT+</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>教程收集</title>
-    <url>/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="hexo-博客搭建参考">hexo 博客搭建参考</h2>
-<ul>
-<li><a href="https://www.jianshu.com/p/77db3862595c">Mac 系统下搭建hexo个人博客</a></li>
-<li><a href="https://blog.csdn.net/jingbin_/article/details/79536467">Mac搭建Hexo博客流程记录</a></li>
-<li><a href="https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/">hexo博客搭建指北</a></li>
-</ul>
-<p>​       <a id="more"></a></p>
-<h2 id="ayer"><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a></h2>
-<p>       本博客采用的 Hexo 主题</p>
-<h2 id="段首空格">段首空格</h2>
-<p>       一个折磨了我许久的东西</p>
-<p>       &amp;nbsp；（；换成英文）是空格符号</p>
-<p>       在段首加入 7 个我觉得比较爽</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span><br></pre></td></tr></table></figure>
-<h2 id="hexo博客折叠-显示-隐藏-部分文字"><a href="https://cppbug.com/2020/02/14/Hexo/h6-%E6%8A%98%E5%8F%A0%E6%96%87%E5%AD%97/">Hexo博客折叠(显示/隐藏)部分文字</a></h2>
-<details>
-  <summary>点击阅读全文</summary>
-<p>text</p>
-</details>
-<h2 id="hexo-spoiler插件"><a href="http://unnamed42.github.io/2016-06-25-hexo-spoiler%E6%8F%92%E4%BB%B6.html">hexo spoiler插件</a></h2>
-<ul>
-<li>单击显示</li>
-</ul>
-<p>​	
-  <span class="spoiler" onclick="this.classList.toggle('spoiler')">
-    <span class="spoiler-blur ">text</span>
-  </span></p>
-<h2 id="标题居中">标题居中</h2>
-<p>       使用 html 实现。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;h1 align &#x3D; &quot;center&quot;&gt;居中的标题&lt;&#x2F;h1&gt;</span><br></pre></td></tr></table></figure>
-<p>       其中的 h1 对应一集标题，根据需要可以改为 h1 ～ h6</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>博客相关细节</tag>
       </tags>
   </entry>
   <entry>
@@ -1039,7 +1039,21 @@
 <p>       我还记得玩枯花的时候，很希望没有那些煞风景的 R18 剧情。</p>
 <p>       不过 gal 我早就没玩了，一点没能与 huyufeifei 产生这方面的共同话题。</p>
 <p>       倒是看的百合相关作品居多——这个时候我已经很厌烦那些表面上萌百合而背地里双飞狗的人了。</p>
-<p>       我和 huyufeifei 的距离，就这样慢慢地拉的很近。</p>
+<hr>
+<p>       huyufeifei 确实为我带来了很多有用的消息。</p>
+<p>       第一点解答了我对于华师一 OI 不太厉害点疑惑。</p>
+<p>       前面说过，华师一在湖北省的竞赛方面是老大的存在，任何其他学校难以望其项背。但唯独 OI ，看起来只是一般程度的强，为什么呢？</p>
+<p>       huyufeifei 说原因非常简单，他们的教练比较拉胯，平常偶尔还会拉拉学生打魔兽，整合资源能力也不过硬。</p>
+<p>       上梁不正下梁歪，华师一的学生颓废的也厉害——反正据我所知，huyufeifei 是这种姿态。</p>
+<p>       但是今年事态有变，华师一在湖南长郡中学挖了个真正的金牌教练——xqz。xqz 姓向，华师一的人叫他向总。</p>
+<p>       huyufeifei 和我说，向总估计能真正的带出成绩来。</p>
+<p>       第二点解答了我的一个历史悬案问题。</p>
+<p>       我在今年四月份发现了一个博客，昵称叫 “zbtrs”。</p>
+<p>       通过 ta 的博客中的自我介绍可以肯定是湖北人，也肯定他没有退役。</p>
+<p>       最为关键的是，这篇博客里面有很多算法的学习记录，让我感到难以企及——我觉得他估计比 ouuan 还强。</p>
+<p>       huyufeifei 告诉我，这人是 hyf ，他们学校的牛逼人。这次 noip 挂了点分，考了第二名，屈居 ouuan 之下。</p>
+<p>       ——这么说来，劲敌又多了一个。</p>
+<p>       我和 huyufeifei 的距离，就这样在吹水聊天中慢慢地拉的很近。</p>
 <hr>
 <p>       我永远无法真正放下文化课。</p>
 <p>       特别是其中的数学英语，非功利的来讲——总是跑不了的。</p>
@@ -1088,6 +1102,27 @@
 <p>       好像集训第一天考的不好是常态，我郁闷郁闷也就没放在心上了。</p>
 <p>       可惜一连很多天，ouuan 的分数还是始终压着我，我的绝对得分也很不好看。</p>
 <p>       EA 的得分则拥有更高的方差，他似乎做题比较莽。</p>
+<hr>
+<p>       一天晚上，我们走在回酒店的路上，各自低头看着手机。</p>
+<p>       ouuan 是个相对沉默寡言的人，但对某些事情有些强烈的热忱。我和他的共同点并不多，能立刻说的出来的只有一点——我们都曾经玩过 SIF，或者说，沉迷过一段时间的<s>上古</s>偶像 LoveLive。可惜这时候我们基本已经退坑，属于没什么可谈的方面。</p>
+<p>       我在人少的时候，话还比较多，总想和 ouuan 聊几句。至于 EA ，我觉得他很神秘，玩的东西很小众，和他也没有 ouuan 熟，说的话自然也不多。</p>
+<p>       <s>但说句实话，ouuan 这个人压根不会聊天。</s></p>
+<p>       从我的角度更为确切的说，他好像对抛出的话题不感兴趣，单纯的不想勉强自己去搭话。</p>
+<p>       几次之后，我在路上就只顾低头玩手机了。</p>
+<p>       这晚，有个说话很<s>睿智(doge)</s>(这两个字是我当年的原话)的同学在 QQ 上找到了我，他是 xht37，也是在之后很出名的 OIer。</p>
+<p>       鉴于 wjyyy 找到了当年的聊天记录，我技术处理一下直接发出来了。</p>
+<p><img src="https://i.loli.net/2020/09/24/CIkDn6GJsW34Bbg.png" alt="ltjl.png"></p>
+<p>       后来 xht 对这段聊天记录<s>据理力争</s>。</p>
+<p><img src="https://i.loli.net/2020/09/24/CneGM3zhZ5wNFR9.png" alt="5.png"></p>
+<p>       嫌弃过去几乎是我们所有人的本能。</p>
+<p>       看上面一段聊天记录，我觉得我也挺傻逼的。</p>
+<p>       但至少，过去的我们选择了好好活着，没有辜负现在的我们。</p>
+<p>       我们自然也不能辜负未来的我们。</p>
+<p>       图中出现的人物都各有各的精彩的故事。</p>
+<p>       Jason 在 2020 年 NOI 拿到了 D 类 银牌，Fuyuki 在向总的培养下在 2020 年 NOI 结束了湖北多年未有人获得金牌、进入集训队的历史，EA 与 ustze 仍然待战 NOI 2021，向总扛起了湖北省信息学竞赛的大旗。</p>
+<p>       至于 xht37 与 ouuan，我会在后面详细讲述我所认识的他们。</p>
+<hr>
+<p>       两周后，EA 回去准备期末考试了，我和 ouuan 搬进了新的酒店。</p>
 ]]></content>
       <categories>
         <category>生活</category>
