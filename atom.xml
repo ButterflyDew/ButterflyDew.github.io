@@ -36,14 +36,19 @@
   </entry>
   
   <entry>
-    <title>教程收集</title>
+    <title></title>
     <link href="http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
     <id>http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</id>
-    <published>2020-09-19T15:14:46.000Z</published>
-    <updated>2020-09-28T03:51:19.475Z</updated>
+    <published>2020-09-19T15:14:46.913Z</published>
+    <updated>2020-09-28T03:59:43.466Z</updated>
     
     
-    <summary type="html">&lt;h2 id=&quot;hexo-博客搭建参考&quot;&gt;hexo 博客搭建参考&lt;/h2&gt;
+    <summary type="html">&lt;p&gt;title: 教程收集&lt;br&gt;
+date: 2020-09-19 23:14:46&lt;br&gt;
+tags: [‘博客相关细节’]&lt;br&gt;
+categories: [‘教程’]&lt;br&gt;
+top: true&lt;/p&gt;
+&lt;h2 id=&quot;hexo-博客搭建参考&quot;&gt;hexo 博客搭建参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/77db3862595c&quot;&gt;Mac 系统下搭建hexo个人博客&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/jingbin_/article/details/79536467&quot;&gt;Mac搭建Hexo博客流程记录&lt;/a&gt;&lt;/li&gt;
@@ -53,10 +58,6 @@
     
     
     
-    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="博客相关细节" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%BB%86%E8%8A%82/"/>
     
   </entry>
   
