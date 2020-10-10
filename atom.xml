@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-07T04:32:16.862Z</updated>
+  <updated>2020-10-10T03:53:09.358Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,20 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>yuri_record</title>
+    <title>百合作品收录</title>
     <link href="http://example.com/2020/10/07/yuri-record/"/>
     <id>http://example.com/2020/10/07/yuri-record/</id>
     <published>2020-10-07T04:14:16.000Z</published>
-    <updated>2020-10-07T04:32:16.862Z</updated>
+    <updated>2020-10-10T03:53:09.358Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2</summary>
-        
-      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;      这是我早就有想法的事情，毕竟我前博客里面有相关的摘录，虽然很杂乱不堪，但是置顶后居然是阅读量与评论量最多的…&lt;/p&gt;
+&lt;p&gt;      在高三，上数学物理课无聊的时候，我也拿个小本本把看过的作品一个个的写评论，还起个名字叫“摸鱼本纪”。因为本本小，所以一整年我都没被发现。&lt;/p&gt;
+&lt;p&gt;      之所以这篇博客鸽了这么长时间，主要是我想多刷后认真开启这个摘录，但是我发现我并没有时间多刷。&lt;/p&gt;
+&lt;p&gt;      所以，本博客仅用作个人收录，涉及的精细评论会较少。&lt;/p&gt;</summary>
     
     
     
@@ -46,7 +44,7 @@
     <link href="http://example.com/2020/09/27/%E9%9A%8F%E7%AC%94/"/>
     <id>http://example.com/2020/09/27/%E9%9A%8F%E7%AC%94/</id>
     <published>2020-09-27T14:58:05.000Z</published>
-    <updated>2020-09-27T23:24:35.086Z</updated>
+    <updated>2020-10-08T09:02:50.039Z</updated>
     
     
     <summary type="html">&lt;p&gt;全是胡扯的东西&lt;/p&gt;</summary>
@@ -229,38 +227,11 @@
   </entry>
   
   <entry>
-    <title>OI康复日记</title>
-    <link href="http://example.com/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/"/>
-    <id>http://example.com/2020/07/15/OI%E5%BA%B7%E5%A4%8D%E6%97%A5%E8%AE%B0/</id>
-    <published>2020-07-15T04:53:34.000Z</published>
-    <updated>2020-09-13T13:44:05.307Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;留坑&lt;/p&gt;
-&lt;p&gt;咕咕咕咕咕咕咕咕咕咕咕咕&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
-    
-    
-    <category term="OI" scheme="http://example.com/tags/OI/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我高中时的文化课与竞赛</title>
     <link href="http://example.com/2020/07/14/Dew/"/>
     <id>http://example.com/2020/07/14/Dew/</id>
     <published>2020-07-14T07:38:43.000Z</published>
-    <updated>2020-10-07T04:16:48.579Z</updated>
+    <updated>2020-10-07T14:31:05.048Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
