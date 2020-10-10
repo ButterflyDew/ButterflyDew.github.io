@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-10T04:21:40.247Z</updated>
+  <updated>2020-10-10T05:02:43.286Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,17 +21,10 @@
     <link href="http://example.com/2020/10/10/newcoder-lxs71/"/>
     <id>http://example.com/2020/10/10/newcoder-lxs71/</id>
     <published>2020-10-10T03:49:07.000Z</published>
-    <updated>2020-10-10T04:21:40.247Z</updated>
+    <updated>2020-10-10T05:02:43.286Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;c&quot;&gt;C&lt;/h2&gt;
-&lt;p&gt;求长为 &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
-        
-      
+    <summary type="html">&lt;h1&gt;牛客练习赛 71&lt;/h1&gt;</summary>
     
     
     
