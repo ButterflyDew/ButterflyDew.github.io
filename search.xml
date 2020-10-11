@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ACM 模板/思路整理</title>
+    <url>/2020/10/12/ACM/</url>
+    <content><![CDATA[<h1>ACM 思路&amp;模板</h1>
+<h2 id="动态规划">动态规划</h2>
+<h3 id="背包">背包</h3>
+<h3 id="区间dp">区间dp</h3>
+<h3 id="树形dp-换根">树形dp（换根）</h3>
+<h3 id="环形dp">环形dp</h3>
+<h3 id="数位dp">数位dp</h3>
+<h3 id="动态dp">动态dp</h3>
+<h3 id="状压dp">状压dp</h3>
+<h3 id="插头dp">插头dp</h3>
+<h3 id="斜率-四边形不等式优化">斜率/四边形不等式优化</h3>
+<h2 id="数据结构">数据结构</h2>
+<h3 id="链表">链表</h3>
+<h3 id="栈-队列-堆-st表">栈/队列/堆/ST表</h3>
+<h3 id="树状数组-线段树">树状数组/线段树</h3>
+<h3 id="平衡树">平衡树</h3>
+<ul>
+<li>基础模板都是<a href="https://www.luogu.com.cn/problem/P3369">洛谷普通平衡树</a></li>
+</ul>
+<ol>
+<li>
+<p>无旋转treap</p>
+<details>
+  <summary>展开</summary>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> root,ch[N][<span class="number">2</span>],siz[N],dat[N],val[N],tot;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ls ch[now][0]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rs ch[now][1]</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">updata</span><span class="params">(<span class="keyword">int</span> now)</span></span>&#123;siz[now]=siz[ls]+siz[rs]+<span class="number">1</span>;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">split</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k,<span class="keyword">int</span> &amp;x,<span class="keyword">int</span> &amp;y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!now)&#123;x=y=<span class="number">0</span>;<span class="keyword">return</span>;&#125;</span><br><span class="line">    <span class="keyword">if</span>(dat[now]&lt;=k)</span><br><span class="line">        x=now,split(rs,k,rs,y);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        y=now,split(ls,k,x,ls);</span><br><span class="line">    updata(now);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Merge</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!x||!y) <span class="keyword">return</span> x+y;</span><br><span class="line">    <span class="keyword">if</span>(val[x]&lt;val[y])</span><br><span class="line">    &#123;</span><br><span class="line">        ch[x][<span class="number">1</span>]=Merge(ch[x][<span class="number">1</span>],y);</span><br><span class="line">        updata(x);</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        ch[y][<span class="number">0</span>]=Merge(x,ch[y][<span class="number">0</span>]);</span><br><span class="line">        updata(y);</span><br><span class="line">        <span class="keyword">return</span> y;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">New</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    val[++tot]=rand(),siz[tot]=<span class="number">1</span>,dat[tot]=k;</span><br><span class="line">    <span class="keyword">return</span> tot;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x,y;</span><br><span class="line">    split(root,k,x,y);</span><br><span class="line">    root=Merge(x,Merge(New(k),y));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">extrack</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x,y,z;</span><br><span class="line">    split(root,k,x,y);</span><br><span class="line">    split(x,k<span class="number">-1</span>,x,z);</span><br><span class="line">    z=Merge(ch[z][<span class="number">0</span>],ch[z][<span class="number">1</span>]);</span><br><span class="line">    root=Merge(x,Merge(z,y));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Rank</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k)</span><span class="comment">//排名为k</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(siz[ls]&gt;=k) <span class="keyword">return</span> Rank(ls,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(siz[ls]+<span class="number">1</span>&lt;k) <span class="keyword">return</span> Rank(rs,k-siz[ls]<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> dat[now];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">frank</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k)</span><span class="comment">//k的排名</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!now) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(dat[now]&gt;=k) <span class="keyword">return</span> frank(ls,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> frank(rs,k)+siz[ls]+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> op,x,i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;op,&amp;x);</span><br><span class="line">        <span class="keyword">if</span>(op==<span class="number">1</span>) Insert(x);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="number">2</span>) extrack(x);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="number">3</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,frank(root,x));</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="number">4</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,Rank(root,x));</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(op==<span class="number">5</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,Rank(root,frank(root,x)<span class="number">-1</span>));</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,Rank(root,frank(root,x+<span class="number">1</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+</li>
+<li>
+<p>splay</p>
+</li>
+<li>
+<p>替罪羊</p>
+<details>
+  <summary>展开</summary>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ls ch[now][0]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rs ch[now][1]</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">double</span> alpha=<span class="number">0.7</span>;</span><br><span class="line"><span class="keyword">int</span> valit[N],siz[N],exist[N],ch[N][<span class="number">2</span>],dat[N],tot,q[N&lt;&lt;<span class="number">4</span>],l=<span class="number">1</span>,r=<span class="number">0</span>,s[N],cnt,root;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bad (siz[now]*alpha&lt;(double)(siz[ls])||siz[now]*alpha&lt;(double)(siz[rs]))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> updata siz[now]=siz[ls]+siz[rs]+1,valit[now]=valit[ls]+valit[rs]+exist[now]</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">New</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> l&lt;=r?q[l++]:++tot;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">del</span><span class="params">(<span class="keyword">int</span> now)</span></span>&#123;q[++r]=now;&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!now) <span class="keyword">return</span>;</span><br><span class="line">    dfs(ls);</span><br><span class="line">    <span class="keyword">if</span>(exist[now])s[++cnt]=dat[now];</span><br><span class="line">    del(now);</span><br><span class="line">    dfs(rs);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> &amp;now,<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;r)&#123;now=<span class="number">0</span>;<span class="keyword">return</span>;&#125;</span><br><span class="line">    now=New();</span><br><span class="line">    <span class="keyword">int</span> mid=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    dat[now]=s[mid];</span><br><span class="line">    exist[now]=<span class="number">1</span>;</span><br><span class="line">    build(ls,l,mid<span class="number">-1</span>),build(rs,mid+<span class="number">1</span>,r);</span><br><span class="line">    updata;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">rebuild</span><span class="params">(<span class="keyword">int</span> &amp;now)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cnt=<span class="number">0</span>;dfs(now);</span><br><span class="line">    build(now,<span class="number">1</span>,cnt);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> &amp;now,<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!now)</span><br><span class="line">    &#123;</span><br><span class="line">        now=New();</span><br><span class="line">        exist[now]=valit[now]=siz[now]=<span class="number">1</span>;</span><br><span class="line">        dat[now]=k;ls=rs=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ++siz[now],++valit[now];</span><br><span class="line">    <span class="keyword">if</span>(dat[now]&gt;=k) Insert(ls,k);</span><br><span class="line">    <span class="keyword">else</span> Insert(rs,k);</span><br><span class="line">    <span class="keyword">if</span>(bad) rebuild(now);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">kth</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!now) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(dat[now]&gt;=k) <span class="keyword">return</span> kth(ls,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> kth(rs,k)+valit[ls]+exist[now];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">extrack</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    --valit[now];</span><br><span class="line">    <span class="keyword">if</span>(k&lt;=valit[ls]) extrack(ls,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(k&gt;valit[ls]+exist[now]) extrack(rs,k-valit[ls]-exist[now]);</span><br><span class="line">    <span class="keyword">else</span> --exist[now];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fkth</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(k&lt;=valit[ls]) <span class="keyword">return</span> fkth(ls,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(k&gt;valit[ls]+exist[now]) <span class="keyword">return</span> fkth(rs,k-valit[ls]-exist[now]);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> dat[now];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> opt,x,i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;opt,&amp;x);</span><br><span class="line">        <span class="keyword">if</span>(opt==<span class="number">1</span>) Insert(root,x);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(opt==<span class="number">2</span>) extrack(root,kth(root,x));</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(opt==<span class="number">3</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,kth(root,x));</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(opt==<span class="number">4</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,fkth(root,x));</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(opt==<span class="number">5</span>) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,fkth(root,kth(root,x)<span class="number">-1</span>));</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,fkth(root,kth(root,x+<span class="number">1</span>)));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</details>
+</li>
+</ol>
+<h3 id="可持久化">可持久化</h3>
+<ol>
+<li>主席树</li>
+<li>并查集</li>
+</ol>
+<h3 id="lct">LCT</h3>
+<h3 id="kd-tree">kd-tree</h3>
+<h3 id="启发式合并">启发式合并</h3>
+<ol>
+<li>左偏树</li>
+<li>线段树</li>
+<li>平衡树</li>
+</ol>
+<h2 id="图论">图论</h2>
+<h3 id="最短路">最短路</h3>
+<h3 id="2-sat">2-sat</h3>
+<h3 id="分层图">分层图</h3>
+<h3 id="生成树-重构树">生成树/重构树</h3>
+<h3 id="仙人掌-圆方树">仙人掌/圆方树</h3>
+<h3 id="欧拉路">欧拉路</h3>
+<h3 id="dag">DAG</h3>
+<h3 id="连通分量-tarjan-割点-边">连通分量（tarjan）、割点/边</h3>
+<h3 id="图的匹配">图的匹配</h3>
+<h3 id="网络流">网络流</h3>
+<ol>
+<li>最大流/最小割</li>
+<li>费用流</li>
+<li>上下界</li>
+</ol>
+<h3 id="树">树</h3>
+<ol>
+<li>LCA</li>
+<li>笛卡尔树</li>
+<li>点分治/动态点分治</li>
+<li>链分治/动态链分治</li>
+<li>虚树</li>
+<li>树分块</li>
+<li>树的直径</li>
+</ol>
+<h2 id="字符串">字符串</h2>
+<h3 id="ac-自动机">AC 自动机</h3>
+<h3 id="kmp">KMP</h3>
+<h3 id="manacher">manacher</h3>
+<h3 id="tire-树">tire 树</h3>
+<h3 id="sa-sam">SA/SAM</h3>
+<h3 id="pam">PAM</h3>
+<h2 id="数学">数学</h2>
+<h3 id="数论基础知识">数论基础知识</h3>
+<ol>
+<li>费马欧拉</li>
+<li>数论分块</li>
+</ol>
+<h3 id="数论进阶知识">数论进阶知识</h3>
+<ol>
+<li>反演
+<ul>
+<li>二项式</li>
+<li>单位根</li>
+<li>莫比乌斯</li>
+</ul>
+</li>
+<li>数
+<ul>
+<li>卡特兰数</li>
+<li>斯特林数</li>
+</ul>
+</li>
+<li>CRT 相关</li>
+<li>容斥原理</li>
+<li>BSGS</li>
+<li>生成函数</li>
+</ol>
+<h3 id="卷积相关知识">卷积相关知识</h3>
+<ol>
+<li>狄利克雷卷积相关知识</li>
+<li>FWT等</li>
+</ol>
+<h3 id="线代相关知识">线代相关知识</h3>
+<ol>
+<li>高斯消元</li>
+<li>矩阵树定理</li>
+<li>线性递推</li>
+</ol>
+<h3 id="筛法">筛法</h3>
+<ol>
+<li>线性筛/欧拉筛</li>
+<li>杜教筛</li>
+<li>洲阁筛/min25筛</li>
+</ol>
+<h3 id="概率期望">概率期望</h3>
+<h3 id="博弈">博弈</h3>
+<h3 id="群论">群论</h3>
+<h2 id="计算几何">计算几何</h2>
+<h3 id="凸包">凸包</h3>
+<h3 id="半平面交">半平面交</h3>
+<h3 id="旋转卡壳">旋转卡壳</h3>
+<h2 id="独立板子-思想">独立板子/思想</h2>
+<h3 id="分治">分治</h3>
+<ol>
+<li>CDQ 分治</li>
+<li>整体二分</li>
+<li>二进制分组</li>
+<li>线段树分治</li>
+</ol>
+<h3 id="贪心-模拟费用流">贪心/模拟费用流</h3>
+<h3 id="补集转换">补集转换</h3>
+<h3 id="高阶-差分">（高阶）差分</h3>
+<h3 id="打表">打表</h3>
+<h3 id="离线">离线</h3>
+<h3 id="随机化">随机化</h3>
+<h3 id="逆波兰表达式">逆波兰表达式</h3>
+<h3 id="bitset">bitset</h3>
+<h3 id="hash">Hash</h3>
+<h3 id="倍增">倍增</h3>
+<h3 id="分块">分块</h3>
+<h3 id="莫队-带修莫队">莫队/带修莫队</h3>
+<h3 id="哈夫曼树">哈夫曼树</h3>
+<h3 id="线性基">线性基</h3>
+<h3 id="扫描线">扫描线</h3>
+<h2 id="交互题">交互题</h2>
+]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
+      <tags>
+        <tag>ACM模板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>fatal_twelve</title>
     <url>/2020/07/26/fatal-twelve/</url>
     <content><![CDATA[<h2 id="fatal-twelve">fatal twelve</h2>
@@ -86,20 +255,10 @@
       <tags>
         <tag>牛客练习赛</tag>
         <tag>容斥</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《人世间》摘抄</title>
-    <url>/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/</url>
-    <content><![CDATA[<ul>
-<li>进入第二道门，便是住屋。郑家只有一件住屋，十五六平方米，火坑占去了一半地方，窗子在连着炕的一面墙上，仅四指宽的窗台。窗台以上的玻璃结着冰，为了防止融化的冰水淌到炕上，窗台被抹布卷和布条卷全部侵占了。地上，锅台和碗橱占去了另一半面积。有张旧桌子，一把让人看上去不敢往下坐的破椅子，还有看上去同样不结实的脸盆架。此外，再无其他什么东西。连箱子也没有，夏秋所穿的为数不多的衣服，叠在炕的一角。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>摘抄</category>
-      </categories>
-      <tags>
-        <tag>摘抄-场景描写</tag>
+        <tag>重构树</tag>
+        <tag>分类讨论</tag>
+        <tag>点分治</tag>
+        <tag>NTT</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +333,20 @@
       </tags>
   </entry>
   <entry>
+    <title>《人世间》摘抄</title>
+    <url>/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/</url>
+    <content><![CDATA[<ul>
+<li>进入第二道门，便是住屋。郑家只有一件住屋，十五六平方米，火坑占去了一半地方，窗子在连着炕的一面墙上，仅四指宽的窗台。窗台以上的玻璃结着冰，为了防止融化的冰水淌到炕上，窗台被抹布卷和布条卷全部侵占了。地上，锅台和碗橱占去了另一半面积。有张旧桌子，一把让人看上去不敢往下坐的破椅子，还有看上去同样不结实的脸盆架。此外，再无其他什么东西。连箱子也没有，夏秋所穿的为数不多的衣服，叠在炕的一角。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>摘抄</category>
+      </categories>
+      <tags>
+        <tag>摘抄-场景描写</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>艾菲的森林</title>
     <url>/2020/08/01/%E8%89%BE%E8%8F%B2%E7%9A%84%E6%A3%AE%E6%9E%97/</url>
     <content><![CDATA[<h1><a href="https://www.linovel.net/book/108290.html">艾菲的森林</a></h1>
@@ -232,82 +405,6 @@
       </categories>
       <tags>
         <tag>LGBT+</tag>
-        <tag>网络文学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>诡秘之主</title>
-    <url>/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/</url>
-    <content><![CDATA[<h1><a href="https://book.qidian.com/info/1010868264">诡秘之主</a></h1>
-<h2 id="前言">前言</h2>
-<p>​	<strong>先定个小目标，超过这本书。</strong></p>
-<p>​	花了大概三周和200块钱，挤着各种各样的碎片时间，看完了这部446w字的网络小说，带给我了很多收获。</p>
-<p>​	<a id="more"></a></p>
-<p>​	一两年前就可以在网络的各种地方看见狂吹此书的人，我将其放在了心里。等到高考后的暑假，我终于有时间有心力来拜读一下所谓的出圈大作。</p>
-<p>​	平心而论，压抑的铺垫让我对此书的心里预期还是很高的，决心认真的，细致的，注重细节的阅读它。它在某些地方超过了我的心里预期，也在不少方面让我有所失望。但从客观上来讲，本书确确实实站在了网络文学的制高点，大抵算是这段历史时期的名副其实。</p>
-<h2 id="正文感想">正文感想</h2>
-<h3 id="价值观">价值观</h3>
-<p>​	从我主观的感受来看，<strong>价值观</strong>是令我感到最为惊喜的。</p>
-<p>​	不管是男频还是女频，很多名气不小的作品大大小小的存在价值观的问题。前些年，杀人越货，灭人满门，凌辱强奸，制毒吸毒，罔顾生灵等行为性质或者想法在不少主角身上发生。这几年大兴的网络文字狱在一定程度上想遏制这种风气，也顺便把相对程度色情暴力给ban了，在读者和作家的角度上看有点矫枉过正的意思。</p>
-<p>​	规则使风气在一定程度上扭转，凭借着复数异性和权势地位特质的作品有点难以行走了，我倒是乐见其成的。于是不少男频作家，不太擅长写出情感的那些，在写不了后宫倒贴的情况下，将目光投向无女主文了，能写一点情感的也只好写 1 对 1 纯爱。但更多的人，会感觉什么东西都不能写了，自己擅长的，读者喜欢的，通通被贴上了封条。</p>
-<p>​	在不考虑抗争规则的情况下，更细化的禁令造就的限制也加剧了内卷竞争，在价值观上把握住度又不过于雷同或是平淡对大多数作家来说相当困难。</p>
-<p>​	对本书来说，悲悯情怀中怀有决断是最大的特点。</p>
-<p>​	简单来讲，就是思考善良，力所能及去实现善良，却一点不圣母。超脱人性的神性，长远的生命带来的社会疏离这些本质的因素，再加上提升实力的仪式要求等，轻飘飘的造成了灾难。而那些有人性的高位格，他们竭力阻止，他们尽己所能，他们也更有优先所拯救的，他们的拯救也需要一些微不足道的代价。</p>
-<p>​	而被悲悯的人物，也出现了细节化的群像描绘，数量有限的弱者与重要人物的主视角交互，有代表性的勾勒出大灾难前他们奋力为生活挣扎的心酸场景，更为那粒时代中的沙落下时蓄势。当往往只是为了一己私欲的灾难来临时，成千上万的他们悄无声息的被毫不留情的抹去了，没留下一朵浪花。</p>
-<p>​	这样的多方视角的细节勾勒下，悲悯情怀就立起来了。</p>
-<p>​	其二是性别平等方面，我从来没对玄幻题材的男性作家产生过类似的幻想，只是想着能给每个人写出感情的后宫文就已经是高点了（当然我是没可能看此类文章的），但本书确确实实提到了，在很多地方提到了，在很多细节表达了。</p>
-<p>​	甚至矛盾的体现也有，不同的宗教中对女性的不同态度，通过人物表现出的作者态度，都切切实实在文章中有着直观表现。</p>
-<p>​	其三是性少数群体方面，简直不像是起点男频，也难怪出圈效果出众。</p>
-<p>​	比较明确的有，变嫁魔女的爱情故事，性别认知障碍的彷徨，主要角色佛休的百合（这点认真看书不难发现很多地方都有所点明，望自重），被小镜子问出许多的黑夜教会执事等。</p>
-<p>​	而很多模糊的情节让人觉得给给的。</p>
-<p>​	其四是奉献与牺牲精神。我们都明白，个人英雄主义很多时候不是英雄，但背负了身不由己责任的个体，在岁月中孤独一人，独自支撑，承受误解，无疑是真正的英雄。同样的，一代代人的忍受，一代代人的追逐光明，一个个身居高位者单是活着，就承担了无穷无尽的责任，背负着无法言说的孤独。而很多人追逐力量的同时，也是在对抗疯狂——这是得到力量的代价，他们守护那些没有力量的人们，他们是守护者，也是时刻可能失控疯狂的可怜虫。</p>
-<p>​	在第一卷小丑与第七卷倒吊人中体现的尤为明显。</p>
-<h3 id="设定">设定</h3>
-<p>​	设定是本书的极大优点，是别的作品所难以企及的。</p>
-<p>​	从整个世界架构来看，作品借用了克苏鲁系的整体风格，但进行了非常多的创新。</p>
-<p>​	本书应该是我读的第二本克系书，首本为日轻——「就凭你也想打败魔王吗」被勇者一行所驱逐的少女要如何才能在王都过上自由的生活，也是相当不错的书，比这本要更加儿童鞋垫一点。</p>
-<p>​	最重要的一点即是力量体系，繁多而不失秩序。作品以 22 条途径（职业）为根基，根基等级将途径划分为 10 个阶段，为每一个阶段原创了名称，为相当部分阶段细致的创建了具体能力。同时，将途径信息一点一点融入叙事，保证了读者能毫不费力记住相当的一部分关键信息。同时，22 条途径并不独立存在，也并不始终存在，他们有些互有联系，构建了世界的底层信息与规则。</p>
-<p>​	世界设定同样优秀，旧日外神这种在克系世界观撑设定的存在，在这本书就如同沉在水下的冰山一般若隐若现，为更多的原创内容让出空间。而信仰与宗教的目的，历史与过去的迷雾，神灵与天使的隐匿，山川与地势的巧合，无不在暗中彰显着克系世界观下的诡异与震慑。</p>
-<p>​	货币体系的设定也是一大优点。很多小说的货币体系极其容易崩溃，动不动就必须科学计数法或者改成以物易物的形式。本作从底层交通，住房，饮食等开始构画，慢慢往上，有种严谨细致的意味。</p>
-<p>​	多的不敢说，再多就剧透了。</p>
-<h3 id="剧情">剧情</h3>
-<p>​	长篇网文很容易在换副本时出现各种各样的问题，本作相对症状较轻。</p>
-<p>​	通常来讲，一个完整的存在等级规则的小说会随着人物实力更换副本，差不多每一个大场景属于一卷。大多数上了点字数网文只要能做到每一个大场景情节相对自洽且故事精彩，就属于在情节上的上成之作。若是能够在各个大场景衔接有度，铺垫自然，伏笔深远的，在这方面就已经登临顶峰了。</p>
-<p>​	从内容分析本书，每一卷的情节精彩度和自洽度是水平很高的，从初来乍到时加入官方组织认识世界得到归属感，到隐姓埋名深藏仇恨时深入基层知晓人间冷暖，顺着出海远行谋求晋升时闯出威名寻觅旧物人事，跟着死神旧事仇恨根源时惊撼于隐秘最终报仇雪恨，接着深入内政了解真相时义无反顾燃烧微不足道，再者追逐光明打破旧地、鸡飞狗跳仓皇逃窜，最终看见了倒立悬吊的牺牲者后箭在弦上不得不发时步步惊心，两败俱伤。</p>
-<p>​	前面几部（1～6）内容都很有内涵与深意，作者通过叙事较好的表达了一些让你共情的想法，而后面几部节奏加快（敌人不再漠视主角的成长，早早干涉），不在有深层次的底层细节叙事，而是把前面铺垫好的大人物一一摆出，描绘的角度更加细微。</p>
-<p>​	世界的认识引出第一部，第一部的仇恨带动升级，第二部的外层认识隐含了第五部，第三部相对其他部较独立，第四部是仇恨的高潮，第五部从第二部启发出人性的认知，第六部是前五部一直以点而非面的形式反复出现的结局，七八部则是被命运压迫下的反抗。</p>
-<p>​	于是前半部分的行为线索是仇恨，后半部分的行为线索是身不由己，都逼迫主视角无法喘息，逐渐变强。</p>
-<p>​	单部伏笔方面本书也做的有趣。</p>
-<p>​	对这方面的处理，本书使用了按时间叙事而非按事件叙事，很细致的把很多事情——这些互相嵌套，承上启下的事情——的各种经过下放至时间段。有种先拿出时间线再安排事件的起因经过结果的感觉，而非在主事件中导入嵌套穿插事件，极大的增加了剧情和活动的丰富度与饱和度。</p>
-<h3 id="人物">人物</h3>
-<p>​	在人物上，本书最大的优点是大家智力都非常在线，实力越强知识越多脑子也越好也越难杀死，非常符合日常认知。</p>
-<p>​	仅仅达到序列 4 的半神就在什么都不清楚的情况下可以通过已有的知识还原事件的缘由、人物等等信息，仅仅知道看到方法就反推出是谁给出的主意的敌人，发现不对就立刻放弃断尾求生的从心苟三家，诸如此类，都彰显了人物的智力。</p>
-<p>​	再者就是群像的典型性，几十个重要配角，每一个都有自己的特色。倒政委的世故与野心，正义的善意与决然，小太阳的纯真与坚韧，咸鱼的懒惰与从心（念作怂），休的执行力，小月亮随波逐流中的坚守，阿蒙的恶趣味与智慧，首席的独自承担与制衡，黄嘉嘉对妈妈的眷恋…大抵都可以看到身为人类的一部分，也可以看到各种各样的扭曲与合理，甚至可以看到人物逐渐的成长，从不谙世事到圆滑或是决然，这点小太阳和正义最为明显。</p>
-<p>​	第三是敌对者的立体化。言之敌对者，是因为很多在主角敌方的人物，只是途径的唯一性的结果。这些人，不论是不是良善者，是否造成了生灵涂炭的悲剧，都较好的表达了处在当前处境的选择缘由，其中有神性与人性的矛盾，有坚守与背负的迫不得已。他们不仅仅是一个剧情推动机，而是一个有过去有未来的立体形象。</p>
-<h3 id="文笔">文笔</h3>
-<p>​	本书文笔略超过平均水平。</p>
-<p>​	幽默感比较有意思，对人物性格凸显很不错。</p>
-<p>​	细节描绘有一定的笔力，远远算不上顶尖。</p>
-<p>​	部分词句结构有点复杂，可以有更好的表达方式避免误解。</p>
-<h3 id="缺陷与个人感受">缺陷与个人感受</h3>
-<p>​	本书的人物群像很丰富，但同样带来了缺点。</p>
-<p>​	由于群像与剧情的相关性，能被展现出来的只能是徘徊于主线附近的。跟随主角一路成长贡献推力的人还好说，但在完全对立的敌人面前，他们的历史与过去就难以展现。这就造成了，哪怕前期的外部铺垫（即间接描述）做的不错，一旦与主视角的互动不够，还是很容易看出天降反派的尴尬感（举个例子：前面描绘了冠绝十世的神话存在，随着主角的成长没几章瞬间崩塌），本作中小查拉图就是一个例子。</p>
-<p>​	而若是群像过于丰富，很多人哪怕是重要配角，他们的故事也完完全全的难以展现，否则会造成主线过于拖沓反复，凝固不前。本书在后期有注意到这点，砍去了不少人的不少事情。</p>
-<p>​	关于这点，其实我个人的想法是去中心视角化的。确实，这与网络小说的理念背道而驰了。但我更想展现的是交互的故事，前行的事件，而非单单一个人肉剧情推动者或是摄像机。不要一个人的故事，也不要这个人带动辐射那群人的故事，世界的故事才是我心中的执念。</p>
-<p>​	本书的大场景推进有些轻薄无力。</p>
-<p>​	这点也许不能算缺点吧，更像是人之常情。这是一种避重就轻以点带面的做法，庞大的战争本身是难以表达的，而局部的场景更能帮助我们表达我们想要的东西。或者是更常用的选择，直接比拼高强者的个体实力。</p>
-<p>​	本书的顶层力量体系没有脱离网文一个广泛缺点的范畴——过于形而上的设定化。</p>
-<p>​	简单来讲，就是顶层战力过于高端，比如举手投足间打爆万千星辰，意念微动逆转时空，没法表现一个斗争体系，只能你说是啥就是啥，量化的意味过于浓厚，而且有些容易出bug。</p>
-<p>​	本书存在这个问题，后面的阿蒙的能力主角的欺诈命运什么啊，看起来挺高端，实际上按照给出的力量体系，同样存在更好的解决方法，一点也不具备唯一性，只是细枝末节存在未定义的情况。</p>
-<p>​	关于这点，我有两个想法，一是把形而上处理好，比如下放至神话，用高层次的定义破解低层次的行为，二是构建体系化，把能力塞进一个框架，将能力限制具体表现，少留白无定义。</p>
-<h2 id="总结">总结</h2>
-<p>​	各方面都很不错的书，我个人来看钱和时间都花的有价值，给我带来了不少思考与收获，希望作者以后可以更好的表达出这个世界的故事。</p>
-<p>​</p>
-]]></content>
-      <categories>
-        <category>作品评论</category>
-      </categories>
-      <tags>
         <tag>网络文学</tag>
       </tags>
   </entry>
@@ -400,6 +497,82 @@
       </categories>
       <tags>
         <tag>感想</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>诡秘之主</title>
+    <url>/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/</url>
+    <content><![CDATA[<h1><a href="https://book.qidian.com/info/1010868264">诡秘之主</a></h1>
+<h2 id="前言">前言</h2>
+<p>​	<strong>先定个小目标，超过这本书。</strong></p>
+<p>​	花了大概三周和200块钱，挤着各种各样的碎片时间，看完了这部446w字的网络小说，带给我了很多收获。</p>
+<p>​	<a id="more"></a></p>
+<p>​	一两年前就可以在网络的各种地方看见狂吹此书的人，我将其放在了心里。等到高考后的暑假，我终于有时间有心力来拜读一下所谓的出圈大作。</p>
+<p>​	平心而论，压抑的铺垫让我对此书的心里预期还是很高的，决心认真的，细致的，注重细节的阅读它。它在某些地方超过了我的心里预期，也在不少方面让我有所失望。但从客观上来讲，本书确确实实站在了网络文学的制高点，大抵算是这段历史时期的名副其实。</p>
+<h2 id="正文感想">正文感想</h2>
+<h3 id="价值观">价值观</h3>
+<p>​	从我主观的感受来看，<strong>价值观</strong>是令我感到最为惊喜的。</p>
+<p>​	不管是男频还是女频，很多名气不小的作品大大小小的存在价值观的问题。前些年，杀人越货，灭人满门，凌辱强奸，制毒吸毒，罔顾生灵等行为性质或者想法在不少主角身上发生。这几年大兴的网络文字狱在一定程度上想遏制这种风气，也顺便把相对程度色情暴力给ban了，在读者和作家的角度上看有点矫枉过正的意思。</p>
+<p>​	规则使风气在一定程度上扭转，凭借着复数异性和权势地位特质的作品有点难以行走了，我倒是乐见其成的。于是不少男频作家，不太擅长写出情感的那些，在写不了后宫倒贴的情况下，将目光投向无女主文了，能写一点情感的也只好写 1 对 1 纯爱。但更多的人，会感觉什么东西都不能写了，自己擅长的，读者喜欢的，通通被贴上了封条。</p>
+<p>​	在不考虑抗争规则的情况下，更细化的禁令造就的限制也加剧了内卷竞争，在价值观上把握住度又不过于雷同或是平淡对大多数作家来说相当困难。</p>
+<p>​	对本书来说，悲悯情怀中怀有决断是最大的特点。</p>
+<p>​	简单来讲，就是思考善良，力所能及去实现善良，却一点不圣母。超脱人性的神性，长远的生命带来的社会疏离这些本质的因素，再加上提升实力的仪式要求等，轻飘飘的造成了灾难。而那些有人性的高位格，他们竭力阻止，他们尽己所能，他们也更有优先所拯救的，他们的拯救也需要一些微不足道的代价。</p>
+<p>​	而被悲悯的人物，也出现了细节化的群像描绘，数量有限的弱者与重要人物的主视角交互，有代表性的勾勒出大灾难前他们奋力为生活挣扎的心酸场景，更为那粒时代中的沙落下时蓄势。当往往只是为了一己私欲的灾难来临时，成千上万的他们悄无声息的被毫不留情的抹去了，没留下一朵浪花。</p>
+<p>​	这样的多方视角的细节勾勒下，悲悯情怀就立起来了。</p>
+<p>​	其二是性别平等方面，我从来没对玄幻题材的男性作家产生过类似的幻想，只是想着能给每个人写出感情的后宫文就已经是高点了（当然我是没可能看此类文章的），但本书确确实实提到了，在很多地方提到了，在很多细节表达了。</p>
+<p>​	甚至矛盾的体现也有，不同的宗教中对女性的不同态度，通过人物表现出的作者态度，都切切实实在文章中有着直观表现。</p>
+<p>​	其三是性少数群体方面，简直不像是起点男频，也难怪出圈效果出众。</p>
+<p>​	比较明确的有，变嫁魔女的爱情故事，性别认知障碍的彷徨，主要角色佛休的百合（这点认真看书不难发现很多地方都有所点明，望自重），被小镜子问出许多的黑夜教会执事等。</p>
+<p>​	而很多模糊的情节让人觉得给给的。</p>
+<p>​	其四是奉献与牺牲精神。我们都明白，个人英雄主义很多时候不是英雄，但背负了身不由己责任的个体，在岁月中孤独一人，独自支撑，承受误解，无疑是真正的英雄。同样的，一代代人的忍受，一代代人的追逐光明，一个个身居高位者单是活着，就承担了无穷无尽的责任，背负着无法言说的孤独。而很多人追逐力量的同时，也是在对抗疯狂——这是得到力量的代价，他们守护那些没有力量的人们，他们是守护者，也是时刻可能失控疯狂的可怜虫。</p>
+<p>​	在第一卷小丑与第七卷倒吊人中体现的尤为明显。</p>
+<h3 id="设定">设定</h3>
+<p>​	设定是本书的极大优点，是别的作品所难以企及的。</p>
+<p>​	从整个世界架构来看，作品借用了克苏鲁系的整体风格，但进行了非常多的创新。</p>
+<p>​	本书应该是我读的第二本克系书，首本为日轻——「就凭你也想打败魔王吗」被勇者一行所驱逐的少女要如何才能在王都过上自由的生活，也是相当不错的书，比这本要更加儿童鞋垫一点。</p>
+<p>​	最重要的一点即是力量体系，繁多而不失秩序。作品以 22 条途径（职业）为根基，根基等级将途径划分为 10 个阶段，为每一个阶段原创了名称，为相当部分阶段细致的创建了具体能力。同时，将途径信息一点一点融入叙事，保证了读者能毫不费力记住相当的一部分关键信息。同时，22 条途径并不独立存在，也并不始终存在，他们有些互有联系，构建了世界的底层信息与规则。</p>
+<p>​	世界设定同样优秀，旧日外神这种在克系世界观撑设定的存在，在这本书就如同沉在水下的冰山一般若隐若现，为更多的原创内容让出空间。而信仰与宗教的目的，历史与过去的迷雾，神灵与天使的隐匿，山川与地势的巧合，无不在暗中彰显着克系世界观下的诡异与震慑。</p>
+<p>​	货币体系的设定也是一大优点。很多小说的货币体系极其容易崩溃，动不动就必须科学计数法或者改成以物易物的形式。本作从底层交通，住房，饮食等开始构画，慢慢往上，有种严谨细致的意味。</p>
+<p>​	多的不敢说，再多就剧透了。</p>
+<h3 id="剧情">剧情</h3>
+<p>​	长篇网文很容易在换副本时出现各种各样的问题，本作相对症状较轻。</p>
+<p>​	通常来讲，一个完整的存在等级规则的小说会随着人物实力更换副本，差不多每一个大场景属于一卷。大多数上了点字数网文只要能做到每一个大场景情节相对自洽且故事精彩，就属于在情节上的上成之作。若是能够在各个大场景衔接有度，铺垫自然，伏笔深远的，在这方面就已经登临顶峰了。</p>
+<p>​	从内容分析本书，每一卷的情节精彩度和自洽度是水平很高的，从初来乍到时加入官方组织认识世界得到归属感，到隐姓埋名深藏仇恨时深入基层知晓人间冷暖，顺着出海远行谋求晋升时闯出威名寻觅旧物人事，跟着死神旧事仇恨根源时惊撼于隐秘最终报仇雪恨，接着深入内政了解真相时义无反顾燃烧微不足道，再者追逐光明打破旧地、鸡飞狗跳仓皇逃窜，最终看见了倒立悬吊的牺牲者后箭在弦上不得不发时步步惊心，两败俱伤。</p>
+<p>​	前面几部（1～6）内容都很有内涵与深意，作者通过叙事较好的表达了一些让你共情的想法，而后面几部节奏加快（敌人不再漠视主角的成长，早早干涉），不在有深层次的底层细节叙事，而是把前面铺垫好的大人物一一摆出，描绘的角度更加细微。</p>
+<p>​	世界的认识引出第一部，第一部的仇恨带动升级，第二部的外层认识隐含了第五部，第三部相对其他部较独立，第四部是仇恨的高潮，第五部从第二部启发出人性的认知，第六部是前五部一直以点而非面的形式反复出现的结局，七八部则是被命运压迫下的反抗。</p>
+<p>​	于是前半部分的行为线索是仇恨，后半部分的行为线索是身不由己，都逼迫主视角无法喘息，逐渐变强。</p>
+<p>​	单部伏笔方面本书也做的有趣。</p>
+<p>​	对这方面的处理，本书使用了按时间叙事而非按事件叙事，很细致的把很多事情——这些互相嵌套，承上启下的事情——的各种经过下放至时间段。有种先拿出时间线再安排事件的起因经过结果的感觉，而非在主事件中导入嵌套穿插事件，极大的增加了剧情和活动的丰富度与饱和度。</p>
+<h3 id="人物">人物</h3>
+<p>​	在人物上，本书最大的优点是大家智力都非常在线，实力越强知识越多脑子也越好也越难杀死，非常符合日常认知。</p>
+<p>​	仅仅达到序列 4 的半神就在什么都不清楚的情况下可以通过已有的知识还原事件的缘由、人物等等信息，仅仅知道看到方法就反推出是谁给出的主意的敌人，发现不对就立刻放弃断尾求生的从心苟三家，诸如此类，都彰显了人物的智力。</p>
+<p>​	再者就是群像的典型性，几十个重要配角，每一个都有自己的特色。倒政委的世故与野心，正义的善意与决然，小太阳的纯真与坚韧，咸鱼的懒惰与从心（念作怂），休的执行力，小月亮随波逐流中的坚守，阿蒙的恶趣味与智慧，首席的独自承担与制衡，黄嘉嘉对妈妈的眷恋…大抵都可以看到身为人类的一部分，也可以看到各种各样的扭曲与合理，甚至可以看到人物逐渐的成长，从不谙世事到圆滑或是决然，这点小太阳和正义最为明显。</p>
+<p>​	第三是敌对者的立体化。言之敌对者，是因为很多在主角敌方的人物，只是途径的唯一性的结果。这些人，不论是不是良善者，是否造成了生灵涂炭的悲剧，都较好的表达了处在当前处境的选择缘由，其中有神性与人性的矛盾，有坚守与背负的迫不得已。他们不仅仅是一个剧情推动机，而是一个有过去有未来的立体形象。</p>
+<h3 id="文笔">文笔</h3>
+<p>​	本书文笔略超过平均水平。</p>
+<p>​	幽默感比较有意思，对人物性格凸显很不错。</p>
+<p>​	细节描绘有一定的笔力，远远算不上顶尖。</p>
+<p>​	部分词句结构有点复杂，可以有更好的表达方式避免误解。</p>
+<h3 id="缺陷与个人感受">缺陷与个人感受</h3>
+<p>​	本书的人物群像很丰富，但同样带来了缺点。</p>
+<p>​	由于群像与剧情的相关性，能被展现出来的只能是徘徊于主线附近的。跟随主角一路成长贡献推力的人还好说，但在完全对立的敌人面前，他们的历史与过去就难以展现。这就造成了，哪怕前期的外部铺垫（即间接描述）做的不错，一旦与主视角的互动不够，还是很容易看出天降反派的尴尬感（举个例子：前面描绘了冠绝十世的神话存在，随着主角的成长没几章瞬间崩塌），本作中小查拉图就是一个例子。</p>
+<p>​	而若是群像过于丰富，很多人哪怕是重要配角，他们的故事也完完全全的难以展现，否则会造成主线过于拖沓反复，凝固不前。本书在后期有注意到这点，砍去了不少人的不少事情。</p>
+<p>​	关于这点，其实我个人的想法是去中心视角化的。确实，这与网络小说的理念背道而驰了。但我更想展现的是交互的故事，前行的事件，而非单单一个人肉剧情推动者或是摄像机。不要一个人的故事，也不要这个人带动辐射那群人的故事，世界的故事才是我心中的执念。</p>
+<p>​	本书的大场景推进有些轻薄无力。</p>
+<p>​	这点也许不能算缺点吧，更像是人之常情。这是一种避重就轻以点带面的做法，庞大的战争本身是难以表达的，而局部的场景更能帮助我们表达我们想要的东西。或者是更常用的选择，直接比拼高强者的个体实力。</p>
+<p>​	本书的顶层力量体系没有脱离网文一个广泛缺点的范畴——过于形而上的设定化。</p>
+<p>​	简单来讲，就是顶层战力过于高端，比如举手投足间打爆万千星辰，意念微动逆转时空，没法表现一个斗争体系，只能你说是啥就是啥，量化的意味过于浓厚，而且有些容易出bug。</p>
+<p>​	本书存在这个问题，后面的阿蒙的能力主角的欺诈命运什么啊，看起来挺高端，实际上按照给出的力量体系，同样存在更好的解决方法，一点也不具备唯一性，只是细枝末节存在未定义的情况。</p>
+<p>​	关于这点，我有两个想法，一是把形而上处理好，比如下放至神话，用高层次的定义破解低层次的行为，二是构建体系化，把能力塞进一个框架，将能力限制具体表现，少留白无定义。</p>
+<h2 id="总结">总结</h2>
+<p>​	各方面都很不错的书，我个人来看钱和时间都花的有价值，给我带来了不少思考与收获，希望作者以后可以更好的表达出这个世界的故事。</p>
+<p>​</p>
+]]></content>
+      <categories>
+        <category>作品评论</category>
+      </categories>
+      <tags>
+        <tag>网络文学</tag>
       </tags>
   </entry>
   <entry>
