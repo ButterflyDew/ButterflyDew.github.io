@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-11T16:26:09.919Z</updated>
+  <updated>2020-10-15T16:51:15.498Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,11 +21,14 @@
     <link href="http://example.com/2020/10/12/ACM/"/>
     <id>http://example.com/2020/10/12/ACM/</id>
     <published>2020-10-11T16:13:32.000Z</published>
-    <updated>2020-10-11T16:26:09.919Z</updated>
+    <updated>2020-10-15T16:51:15.498Z</updated>
     
     
     <summary type="html">&lt;h1&gt;ACM 思路&amp;amp;模板&lt;/h1&gt;
-&lt;p&gt;鸽子要开始卷了！！&lt;/p&gt;</summary>
+&lt;p&gt;鸽子要开始卷了！！&lt;/p&gt;
+&lt;p&gt;鸽子鸽子了。。。&lt;/p&gt;
+&lt;p&gt;周末一定补一点呜呜呜&lt;/p&gt;
+&lt;p&gt;隔壁dag已经组好队了&lt;/p&gt;</summary>
     
     
     
@@ -70,7 +73,7 @@
     <link href="http://example.com/2020/10/07/yuri-record/"/>
     <id>http://example.com/2020/10/07/yuri-record/</id>
     <published>2020-10-07T04:14:16.000Z</published>
-    <updated>2020-10-10T03:53:09.358Z</updated>
+    <updated>2020-10-15T16:50:24.110Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
@@ -280,7 +283,7 @@
     <link href="http://example.com/2020/07/14/Dew/"/>
     <id>http://example.com/2020/07/14/Dew/</id>
     <published>2020-07-14T07:38:43.000Z</published>
-    <updated>2020-10-12T16:33:03.098Z</updated>
+    <updated>2020-10-15T16:49:28.379Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
