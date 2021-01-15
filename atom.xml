@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-15T12:40:54.020Z</updated>
+  <updated>2021-01-15T12:52:03.837Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,17 +21,12 @@
     <link href="http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/"/>
     <id>http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/</id>
     <published>2021-01-15T12:26:35.000Z</published>
-    <updated>2021-01-15T12:40:54.020Z</updated>
+    <updated>2021-01-15T12:52:03.837Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;科学抽卡攻略&quot;&gt;科学抽卡攻略&lt;/h2&gt;
-&lt;p&gt;​	众所周知，在魔法纪录的池子中，单抽十次和十连一次的概率并不相同，那么，是否在确定的单抽与十连数量下，一定存在一种最优策略，使得小 qb 获得 up</summary>
-        
-      
+&lt;p&gt;​	众所周知，在魔法纪录的池子中，单抽十次和十连一次的概率并不相同，那么，是否在确定的单抽与十连数量下，一定存在一种最优策略，使得小 qb 获得 up 魔法少女的最高孔数的概率尽可能大呢？如果存在，最优策略与随机（或者最劣）策略的概率又相差多少呢？&lt;/p&gt;
+&lt;p&gt;​</summary>
     
     
     
