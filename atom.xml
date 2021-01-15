@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-29T15:15:42.909Z</updated>
+  <updated>2021-01-15T12:40:54.020Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>抽卡指北</title>
+    <link href="http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/"/>
+    <id>http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/</id>
+    <published>2021-01-15T12:26:35.000Z</published>
+    <updated>2021-01-15T12:40:54.020Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;科学抽卡攻略&quot;&gt;科学抽卡攻略&lt;/h2&gt;
+&lt;p&gt;​	众所周知，在魔法纪录的池子中，单抽十次和十连一次的概率并不相同，那么，是否在确定的单抽与十连数量下，一定存在一种最优策略，使得小 qb 获得 up</summary>
+        
+      
+    
+    
+    
+    <category term="娱乐" scheme="http://example.com/categories/%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="手游" scheme="http://example.com/tags/%E6%89%8B%E6%B8%B8/"/>
+    
+    <category term="概率期望" scheme="http://example.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="动态规划" scheme="http://example.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>whu_begin</title>
@@ -176,7 +206,7 @@
     <link href="http://example.com/2020/09/19/science-fiction-excerpt/"/>
     <id>http://example.com/2020/09/19/science-fiction-excerpt/</id>
     <published>2020-09-19T14:17:58.000Z</published>
-    <updated>2020-09-24T23:15:39.657Z</updated>
+    <updated>2021-01-15T12:32:20.051Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
