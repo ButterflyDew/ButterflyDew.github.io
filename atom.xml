@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-15T12:52:03.837Z</updated>
+  <updated>2021-01-21T14:37:44.206Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>题目摘录</title>
+    <link href="http://example.com/2021/01/21/%E9%A2%98%E7%9B%AE%E6%91%98%E5%BD%95/"/>
+    <id>http://example.com/2021/01/21/%E9%A2%98%E7%9B%AE%E6%91%98%E5%BD%95/</id>
+    <published>2021-01-21T13:07:39.000Z</published>
+    <updated>2021-01-21T14:37:44.206Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;题目摘录&quot;&gt;题目摘录&lt;/h2&gt;
+&lt;p&gt;​	记录一下感觉还不错的题目。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="杂题摘录" scheme="http://example.com/tags/%E6%9D%82%E9%A2%98%E6%91%98%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>抽卡指北</title>
