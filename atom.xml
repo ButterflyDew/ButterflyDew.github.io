@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-29T14:09:23.667Z</updated>
+  <updated>2021-03-01T14:01:45.837Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>math</title>
+    <link href="http://example.com/2021/03/01/math/"/>
+    <id>http://example.com/2021/03/01/math/</id>
+    <published>2021-03-01T10:24:16.000Z</published>
+    <updated>2021-03-01T14:01:45.837Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;ACM 中的数学模版&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;不知道怎么就成为数学手了（大概&lt;/p&gt;
+&lt;h2 id=&quot;排列组合&quot;&gt;排列组合&lt;/h2&gt;
+&lt;h3 id=&quot;多重集的排列数-多重组合数&quot;&gt;多重集的排列数（多重组合数）&lt;/h3&gt;
+&lt;p&gt;设</summary>
+        
+      
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>题目摘录</title>
@@ -365,7 +395,7 @@
     <link href="http://example.com/2020/07/14/Dew/"/>
     <id>http://example.com/2020/07/14/Dew/</id>
     <published>2020-07-14T07:38:43.000Z</published>
-    <updated>2021-02-09T03:23:04.692Z</updated>
+    <updated>2021-02-09T12:03:48.438Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
