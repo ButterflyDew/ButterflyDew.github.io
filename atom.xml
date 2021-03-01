@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-01T14:07:50.385Z</updated>
+  <updated>2021-03-01T14:09:08.561Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/03/01/math/"/>
     <id>http://example.com/2021/03/01/math/</id>
     <published>2021-03-01T10:24:16.000Z</published>
-    <updated>2021-03-01T14:07:50.385Z</updated>
+    <updated>2021-03-01T14:09:08.561Z</updated>
     
     
     <summary type="html">&lt;h1&gt;ACM 中的数学模版&lt;/h1&gt;
