@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dew&#39;s Blog</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-08-15T08:45:19.660Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Dew</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>math</title>
+    <link href="http://example.com/2021/03/01/math/"/>
+    <id>http://example.com/2021/03/01/math/</id>
+    <published>2021-03-01T10:24:16.000Z</published>
+    <updated>2021-08-15T08:45:19.660Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;ACM 中的数学模版&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;不知道怎么就成为数学手了（大概&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="数学" scheme="http://example.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>题目摘录</title>
+    <link href="http://example.com/2021/01/21/%E9%A2%98%E7%9B%AE%E6%91%98%E5%BD%95/"/>
+    <id>http://example.com/2021/01/21/%E9%A2%98%E7%9B%AE%E6%91%98%E5%BD%95/</id>
+    <published>2021-01-21T13:07:39.000Z</published>
+    <updated>2021-01-29T14:09:23.667Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;题目摘录&quot;&gt;题目摘录&lt;/h2&gt;
+&lt;p&gt;​	记录一下感觉还不错的题目。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="杂题摘录" scheme="http://example.com/tags/%E6%9D%82%E9%A2%98%E6%91%98%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抽卡指北</title>
+    <link href="http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/"/>
+    <id>http://example.com/2021/01/15/%E6%8A%BD%E5%8D%A1%E6%8C%87%E5%8C%97/</id>
+    <published>2021-01-15T12:26:35.000Z</published>
+    <updated>2021-01-15T12:52:03.837Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;科学抽卡攻略&quot;&gt;科学抽卡攻略&lt;/h2&gt;
+&lt;p&gt;​	众所周知，在魔法纪录的池子中，单抽十次和十连一次的概率并不相同，那么，是否在确定的单抽与十连数量下，一定存在一种最优策略，使得小 qb 获得 up 魔法少女的最高孔数的概率尽可能大呢？如果存在，最优策略与随机（或者最劣）策略的概率又相差多少呢？&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="娱乐" scheme="http://example.com/categories/%E5%A8%B1%E4%B9%90/"/>
+    
+    
+    <category term="手游" scheme="http://example.com/tags/%E6%89%8B%E6%B8%B8/"/>
+    
+    <category term="概率期望" scheme="http://example.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
+    
+    <category term="动态规划" scheme="http://example.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>whu_begin</title>
+    <link href="http://example.com/2020/11/24/whu-begin/"/>
+    <id>http://example.com/2020/11/24/whu-begin/</id>
+    <published>2020-11-24T15:59:19.000Z</published>
+    <updated>2020-11-29T15:15:42.909Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;武汉大学2020年新生程序设计竞赛&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你好，ACM！&lt;/p&gt;
+&lt;p&gt;现在是新的开始，我再次选择了你——算法竞赛。&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;希望你不要不识抬举！&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;希望这场不顺心的始动赛可以成为我大学 ACM 生涯的最低点，让我从这里开始，再重新慢慢变强！&lt;/p&gt;
+&lt;p&gt;胜败兵家事不期，卷土重来未可知！&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="高校新生赛" scheme="http://example.com/tags/%E9%AB%98%E6%A0%A1%E6%96%B0%E7%94%9F%E8%B5%9B/"/>
+    
+    <category term="分块" scheme="http://example.com/tags/%E5%88%86%E5%9D%97/"/>
+    
+    <category term="二分" scheme="http://example.com/tags/%E4%BA%8C%E5%88%86/"/>
+    
+    <category term="状压" scheme="http://example.com/tags/%E7%8A%B6%E5%8E%8B/"/>
+    
+    <category term="最短路" scheme="http://example.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+    <category term="SA/SAM" scheme="http://example.com/tags/SA-SAM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ACM 模板/思路整理</title>
+    <link href="http://example.com/2020/10/12/ACM/"/>
+    <id>http://example.com/2020/10/12/ACM/</id>
+    <published>2020-10-11T16:13:32.000Z</published>
+    <updated>2020-10-26T14:48:49.474Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;ACM 思路&amp;amp;模板&lt;/h1&gt;
+&lt;p&gt;鸽子要开始卷了！！&lt;/p&gt;
+&lt;p&gt;鸽子鸽子了。。。&lt;/p&gt;
+&lt;p&gt;周末一定补一点呜呜呜&lt;/p&gt;
+&lt;p&gt;隔壁dag已经组好队了&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="ACM模板" scheme="http://example.com/tags/ACM%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>newcoder_lxs71</title>
+    <link href="http://example.com/2020/10/10/newcoder-lxs71/"/>
+    <id>http://example.com/2020/10/10/newcoder-lxs71/</id>
+    <published>2020-10-10T03:49:07.000Z</published>
+    <updated>2020-10-11T16:15:37.516Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;牛客练习赛 71&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="算法竞赛" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="牛客练习赛" scheme="http://example.com/tags/%E7%89%9B%E5%AE%A2%E7%BB%83%E4%B9%A0%E8%B5%9B/"/>
+    
+    <category term="容斥" scheme="http://example.com/tags/%E5%AE%B9%E6%96%A5/"/>
+    
+    <category term="重构树" scheme="http://example.com/tags/%E9%87%8D%E6%9E%84%E6%A0%91/"/>
+    
+    <category term="分类讨论" scheme="http://example.com/tags/%E5%88%86%E7%B1%BB%E8%AE%A8%E8%AE%BA/"/>
+    
+    <category term="点分治" scheme="http://example.com/tags/%E7%82%B9%E5%88%86%E6%B2%BB/"/>
+    
+    <category term="NTT" scheme="http://example.com/tags/NTT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>百合作品收录</title>
+    <link href="http://example.com/2020/10/07/yuri-record/"/>
+    <id>http://example.com/2020/10/07/yuri-record/</id>
+    <published>2020-10-07T04:14:16.000Z</published>
+    <updated>2020-10-15T16:50:24.110Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;      这是我早就有想法的事情，毕竟我前博客里面有相关的摘录，虽然很杂乱不堪，但是置顶后居然是阅读量与评论量最多的…&lt;/p&gt;
+&lt;p&gt;      在高三，上数学物理课无聊的时候，我也拿个小本本把看过的作品一个个的写评论，还起个名字叫“摸鱼本纪”。因为本本小，所以一整年我都没被发现。&lt;/p&gt;
+&lt;p&gt;      之所以这篇博客鸽了这么长时间，主要是我想多刷后认真开启这个摘录，但是我发现我并没有时间多刷。&lt;/p&gt;
+&lt;p&gt;      所以，本博客仅用作个人收录，涉及的精细评论会较少。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="作品摘录" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E6%91%98%E5%BD%95/"/>
+    
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随笔</title>
+    <link href="http://example.com/2020/09/27/%E9%9A%8F%E7%AC%94/"/>
+    <id>http://example.com/2020/09/27/%E9%9A%8F%E7%AC%94/</id>
+    <published>2020-09-27T14:58:05.000Z</published>
+    <updated>2020-10-12T15:42:39.590Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;全是胡扯的东西&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="感想" scheme="http://example.com/tags/%E6%84%9F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教程收集</title>
+    <link href="http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
+    <id>http://example.com/2020/09/19/%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</id>
+    <published>2020-09-19T15:14:46.000Z</published>
+    <updated>2020-11-08T03:12:05.876Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;hexo-博客搭建参考&quot;&gt;hexo 博客搭建参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/77db3862595c&quot;&gt;Mac 系统下搭建hexo个人博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/jingbin_/article/details/79536467&quot;&gt;Mac搭建Hexo博客流程记录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://ouuan.github.io/post/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8C%97/&quot;&gt;hexo博客搭建指北&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="博客相关细节" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%BB%86%E8%8A%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中短篇科幻小说摘录</title>
+    <link href="http://example.com/2020/09/19/science-fiction-excerpt/"/>
+    <id>http://example.com/2020/09/19/science-fiction-excerpt/</id>
+    <published>2020-09-19T14:17:58.000Z</published>
+    <updated>2021-01-15T12:32:20.051Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;       本文用来记录一直以来看到的中短篇科幻小说。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品摘录" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E6%91%98%E5%BD%95/"/>
+    
+    
+    <category term="科幻" scheme="http://example.com/tags/%E7%A7%91%E5%B9%BB/"/>
+    
+    <category term="类严肃文学" scheme="http://example.com/tags/%E7%B1%BB%E4%B8%A5%E8%82%83%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>寄甡</title>
+    <link href="http://example.com/2020/09/01/%E5%AF%84%E7%94%A1/"/>
+    <id>http://example.com/2020/09/01/%E5%AF%84%E7%94%A1/</id>
+    <published>2020-09-01T02:36:41.000Z</published>
+    <updated>2020-09-01T03:36:31.517Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;寄甡&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/09/01/14wIlxaZFSYNTEL.png&quot; alt=&quot;图层 1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="视觉小说" scheme="http://example.com/tags/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/"/>
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诡秘之主</title>
+    <link href="http://example.com/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/"/>
+    <id>http://example.com/2020/08/24/%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB/</id>
+    <published>2020-08-24T07:02:14.000Z</published>
+    <updated>2020-08-26T02:51:20.198Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://book.qidian.com/info/1010868264&quot;&gt;诡秘之主&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;​	&lt;strong&gt;先定个小目标，超过这本书。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​	花了大概三周和200块钱，挤着各种各样的碎片时间，看完了这部446w字的网络小说，带给我了很多收获。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="网络文学" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>艾菲的森林</title>
+    <link href="http://example.com/2020/08/01/%E8%89%BE%E8%8F%B2%E7%9A%84%E6%A3%AE%E6%9E%97/"/>
+    <id>http://example.com/2020/08/01/%E8%89%BE%E8%8F%B2%E7%9A%84%E6%A3%AE%E6%9E%97/</id>
+    <published>2020-08-01T01:03:52.000Z</published>
+    <updated>2020-08-02T14:25:29.855Z</updated>
+    
+    
+    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://www.linovel.net/book/108290.html&quot;&gt;艾菲的森林&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;​		我发现了，人是有限度的，鸽子是没有限度的。前面的回忆录堪堪写了三分之一，fatal twelve 的评论也只写了一大半，我却又开了一个新评论写。虽然本博客本来就是自娱自乐（即便这种事情我高三干了一整年），但自己鸽自己也蛮奇怪的吧。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+    <category term="网络文学" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fatal_twelve</title>
+    <link href="http://example.com/2020/07/26/fatal-twelve/"/>
+    <id>http://example.com/2020/07/26/fatal-twelve/</id>
+    <published>2020-07-26T15:27:25.000Z</published>
+    <updated>2020-08-03T03:03:59.035Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;fatal-twelve&quot;&gt;fatal twelve&lt;/h2&gt;
+&lt;p&gt;​    这几天一直没写回忆录（咕咕咕），一方面是在复读与不复读之间徘徊，去了很多现场招生咨询顺带也去登记了本校复读，另一方面是在打95版pvz和本游戏fatal twelve(致命十二人)。&lt;/p&gt;
+&lt;p&gt;​    本文用来记录一下游戏感受。&lt;/p&gt;
+&lt;p&gt;​</summary>
+    
+    
+    
+    <category term="作品评论" scheme="http://example.com/categories/%E4%BD%9C%E5%93%81%E8%AF%84%E8%AE%BA/"/>
+    
+    
+    <category term="视觉小说" scheme="http://example.com/tags/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/"/>
+    
+    <category term="LGBT+" scheme="http://example.com/tags/LGBT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《人世间》摘抄</title>
+    <link href="http://example.com/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/"/>
+    <id>http://example.com/2020/07/17/%E3%80%8A%E4%BA%BA%E4%B8%96%E9%97%B4%E3%80%8B%E6%91%98%E6%8A%84/</id>
+    <published>2020-07-17T13:15:24.000Z</published>
+    <updated>2020-07-17T13:58:45.146Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;进入第二道门，便是住屋。郑家只有一件住屋，十五六平方米，火坑占去了一半地方，窗子在连着炕的一面墙上，仅四指宽的窗台。窗台以上的玻璃结着冰，为了防止融化的冰水淌到炕上，窗台被抹布卷和布条卷全部侵占了。地上，锅台和碗橱占去了另一半面积。有张旧桌子，一把让人看上去不敢</summary>
+        
+      
+    
+    
+    
+    <category term="摘抄" scheme="http://example.com/categories/%E6%91%98%E6%8A%84/"/>
+    
+    
+    <category term="摘抄-场景描写" scheme="http://example.com/tags/%E6%91%98%E6%8A%84-%E5%9C%BA%E6%99%AF%E6%8F%8F%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我高中时的文化课与竞赛</title>
+    <link href="http://example.com/2020/07/14/Dew/"/>
+    <id>http://example.com/2020/07/14/Dew/</id>
+    <published>2020-07-14T07:38:43.000Z</published>
+    <updated>2021-08-18T16:17:36.219Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本文根据本人的亲身经历撰写，因三年时光并不很好回忆，与现实情况细节有相当的出入属于正常情况，还望各位出场人物轻喷（保证本文不出现真实姓名，如果侵犯到了您的权益或者您不想出现在我的故事中，请联系我本人修改或删除）&lt;/p&gt;
+&lt;p&gt;萝卜（huyufeifei）建议我写一点发一点，我觉得很有道理。&lt;/p&gt;
+&lt;p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="http://example.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="回忆录" scheme="http://example.com/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
+    
+  </entry>
+  
+</feed>
